@@ -1,7 +1,7 @@
 package model;
 
 /* Pilares da POO
-   Abstração
+   Abstração - OK
    Encapsulamento
    Herança
    Polimorfismo
