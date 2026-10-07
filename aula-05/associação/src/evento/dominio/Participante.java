@@ -6,8 +6,14 @@ public class Participante extends Usuario {
     private boolean pagante;
     private Set<Evento> eventos;
 
-    public Participante(String nome, String email, long id) {
-        super(nome, email, id);
+    public Participante(String nome, String email) {
+        this(nome, email, false);
+    }
+
+    public Participante(String nome, String email, boolean pagante){
+        setNome(nome);
+        setEmail(email);
+        setPagante(pagante);
     }
 
     protected Participante() {
@@ -22,6 +28,6 @@ public class Participante extends Usuario {
     }
 
     public Set<Evento> getEventos() {
-        return eventos;
+        return evento;
     }
 }

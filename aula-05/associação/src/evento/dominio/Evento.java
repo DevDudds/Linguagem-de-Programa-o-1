@@ -11,18 +11,20 @@ public class Evento {
     private String local;
     private int capacidade;
     private Organizador organizador;
-    private List<Programacao> programacao;
-    private Set<Participante> participantes;
+    private List<Programacao> programacao = new ArrayList<>();
+    private Set<Participante> participantes = new HashSet<>();
+
     protected Evento() {
     }
-    public Evento(long id, String nome, LocalDate data, String local, int capacidade, Organizador organizador) {
-        this.id = id;
-        this.nome = nome;
-        this.data = data;
-        this.local = local;
-        this.capacidade = capacidade;
-        this.organizador = organizador;
+
+    public Evento(String nome, LocalDate data, String local, int capacidade, Organizador organizador) {
+        setNome(nome);
+        setData(data);
+        setLocal(local);
+        setCapacidade(capacidade);
+        setOrganizador(organizador);
     }
+
     public long getId() {
         return id;
     }
@@ -64,7 +66,7 @@ public class Evento {
         this.programacao = programacao;
     }
     public Set<Participante> getParticipantes() {
-        return participantes;
+        return new HashSet<>(participantes);
     }
     public void setParticipantes(Set<Participante> participantes) {
         this.participantes = participantes;

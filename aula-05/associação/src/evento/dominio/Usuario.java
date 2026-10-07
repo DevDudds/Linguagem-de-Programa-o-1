@@ -25,10 +25,9 @@ public abstract class Usuario {
     protected Usuario() {
     }
 
-    protected Usuario(String nome, String email, long id) {
+    protected Usuario(String nome, String email) {
         this.nome = nome;
         this.email = email;
-        this.id = id;
     }
 
     

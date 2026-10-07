@@ -6,9 +6,9 @@ public class Organizador extends Usuario {
 
     protected Organizador(){}
 
-    public Organizador(String nome, String email, long id, String setor){
-        super(nome, email, id);
-        this.setor = setor;
+    public Organizador(String nome, String email, String setor){
+        super(nome, email);
+        setSetor(setor);
     }
 
     public String getSetor() {
