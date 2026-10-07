@@ -1,8 +1,9 @@
 import evento.dominio.Usuario;
 import evento.dominio.Organizador;
 import evento.dominio.Participante;
+import evento.dominio.Evento;
 
-import java.util.LocalDate;
+import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -13,6 +14,6 @@ public class App {
 
         Evento evento = new Evento("TechWeek II", LocalDate.now(), "IFBA", 100, organizador1);
 
-        System.out.println("A " + evento.getNome) + " é organizado por " + evento.getOrganizador().getNome());
+        System.out.println("A " + evento.getNome() + " é organizado por " + evento.getOrganizador().getNome() + " O " + evento.getOrganizador().getSetor());
     }
-i
+}

@@ -1,5 +1,6 @@
 package evento.dominio;
 import java.util.Set;
+import java.util.List;
 
 public class Participante extends Usuario {
 
@@ -28,6 +29,6 @@ public class Participante extends Usuario {
     }
 
     public Set<Evento> getEventos() {
-        return evento;
+        return eventos;
     }
 }

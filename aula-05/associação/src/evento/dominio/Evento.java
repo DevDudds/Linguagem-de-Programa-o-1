@@ -3,6 +3,8 @@ package evento.dominio;
 import java.util.Set;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Evento {
     private long id;
